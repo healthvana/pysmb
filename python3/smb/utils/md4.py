@@ -246,10 +246,7 @@ def f3(a, b, c, d, k, s, X): return ROL(a + H(b, c, d) + X[k] + U32(0x6ed9eba1),
 #--------------------------------------------------------------------
 # helper function
 def int_array2str(array):
-        str = ''
-        for i in array:
-            str = str + chr(i)
-        return str
+        return ''.join(str(array))
 
 #--------------------------------------------------------------------
 # To be able to use md4.new() instead of md4.MD4()
